@@ -13,8 +13,10 @@ export class FullnameComponent {
   calculator(operation: number = 0) {
     if (operation == 1) {
       return (this.sum = this.n1 + this.n2);
-    } else{
-      return
+    } else if (operation == 2) {
+      return (this.sum = this.n1 - this.n2);
+    } else {
+      return;
     }
   }
 }
