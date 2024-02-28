@@ -17,6 +17,8 @@ export class FullnameComponent {
       return (this.sum = this.n1 - this.n2);
     } else if (operation == 3) {
       return (this.sum = this.n1 * this.n2);
+    } else if (operation == 4) {
+      return (this.sum = this.n1 / this.n2);
     } else {
       return;
     }
