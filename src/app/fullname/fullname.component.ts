@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './fullname.component.css',
 })
 export class FullnameComponent {
-  n1: number = 0;
-  n2: number = 0;
-  sum: number = 0;
+  n1: any;
+  n2: any;
+  sum: any;
 
-  calculator(operation: number = 0) {
+  calculator(operation: any) {
     if (operation == 1) {
       return (this.sum = this.n1 + this.n2);
     } else if (operation == 2) {

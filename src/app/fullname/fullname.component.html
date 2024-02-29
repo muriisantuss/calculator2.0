@@ -1,22 +1,22 @@
 <main>
-  <section>
+  <section class="content">
     <header>
       <h1>Calculator</h1>
     </header>
     <form>
       <label for="number1">First Number:</label>
-      <input type="number" [(ngModel)]="n1" name="number1" />
-
+      <input type="number" placeholder="Type a number" [(ngModel)]="n1" name="number1 " />
       <label for="number2">Second Number:</label>
-      <input type="number" [(ngModel)]="n2" name="number2" />
+      <input type="number" placeholder="Type a number" [(ngModel)]="n2" name="number2" />
 
-      <button (click)="calculator(1)">Add</button>
-      <button (click)="calculator(2)">Substract</button>
-      <button (click)="calculator(3)">Multiply</button>
-      <button (click)="calculator(4)">Divide</button>
+      <div id="buttons">
+        <button (click)="calculator(1)">Add</button>
+        <button (click)="calculator(2)">Substract</button>
+        <button (click)="calculator(3)">Multiply</button>
+        <button (click)="calculator(4)">Divide</button>
+      </div>
 
-      <br /><br />
-      <button>Result: {{ sum }}</button>
+      <p>Result: <br>{{ sum }}</p>
     </form>
   </section>
 </main>

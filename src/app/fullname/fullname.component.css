@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+h1, p {
+  font: bold 1.25rem "Cambria", sans-serif	;
+}
+
+input{
+  text-align: center;
+  line-height: 2rem;
+}
+
+
+
+p, label {
+  display: block;
+  text-align: center;
+}
