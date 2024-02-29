@@ -1,11 +1,22 @@
-<form>
-  <input type="number" [(ngModel)]="n1" name="To show number" />
-  <input type="number" [(ngModel)]="n2" name="To show number" />
-  <button (click)="calculator(1)">To sum</button>
-  <button (click)="calculator(2)">To substract</button>
-  <button (click)="calculator(3)">To multiply</button>
-  <button (click)="calculator(4)">To divide</button>
+<main>
+  <section>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <form>
+      <label for="number1">First Number:</label>
+      <input type="number" [(ngModel)]="n1" name="number1" />
 
-  <br /><br />
-  <button>{{ sum }}</button>
-</form>
+      <label for="number2">Second Number:</label>
+      <input type="number" [(ngModel)]="n2" name="number2" />
+
+      <button (click)="calculator(1)">Add</button>
+      <button (click)="calculator(2)">Substract</button>
+      <button (click)="calculator(3)">Multiply</button>
+      <button (click)="calculator(4)">Divide</button>
+
+      <br /><br />
+      <button>Result: {{ sum }}</button>
+    </form>
+  </section>
+</main>
