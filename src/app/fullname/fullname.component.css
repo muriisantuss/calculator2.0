@@ -1,13 +1,17 @@
-:root{
-  --purple-: #92B4F4;
-  --puple2-: #B8BEDD;
-  --gray-: #CFDEE7;
-  --off-white: #F0E6EF;
-  --black-:#F0E6EF;
+:root {
+  --purple-: #2a2438;
+  --puple2-: #b8bedd;
+  --gray-: #cfdee7;
+  --off-white: #f0e6ef;
+  --black-: #060608;
 }
 
 main {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple-);
 }
 
 .content {
@@ -15,11 +19,18 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  background-color: var(--puple2-);
+
+  width: 16rem;
+  height: 17rem;
+  border-radius: 0.5rem;
+  box-shadow: -0.2rem 0.2rem 0 0 #b8bedd7a;
 }
 
 .checked {
-  color: #B8BEDD;
+  color: var(--purple-);
+  scale: 2;
+  margin-bottom: 0.5rem;
 }
 
 #buttons {
@@ -29,14 +40,34 @@ main {
   margin: 1rem 0;
 }
 
+button {
+  background-color: var(--off-white);
+  border-radius: 0.3rem;
+  border: none;
+  box-shadow: -.1rem 0.16rem 0 0 var(--purple-);
+}
+
 h1,
 p {
   font: bold 1.25rem "Cambria", sans-serif;
+  color: #2a2438;
 }
 
 input {
   text-align: center;
   line-height: 2rem;
+  margin-top: 0.5rem;
+  border: 2px solid #2a24381a;
+  border-radius: 0.5rem;
+  background-color: var(--off-white);
+  box-shadow: -1px 2px 0 0 #2a243873;
+
+}
+
+input:focus {
+  /* Your custom styles for focused or active state */
+  outline: none; /* Remove the default focus outline */
+  border: 2px solid var(--purple-);
 }
 
 p,
