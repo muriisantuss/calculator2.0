@@ -20,11 +20,9 @@ main {
   align-items: center;
   justify-content: center;
   background-color: var(--puple2-);
-
-  width: 16rem;
-  height: 17rem;
+  padding: 2rem;
   border-radius: 0.5rem;
-  box-shadow: -0.2rem 0.2rem 0 0 #b8bedd7a;
+  box-shadow: -0.4rem 0.4rem 0 0 #b8bedd7a;
 }
 
 .checked {
@@ -47,10 +45,23 @@ button {
   box-shadow: -.1rem 0.16rem 0 0 var(--purple-);
 }
 
+button:hover{
+  box-shadow: 0rem 0rem 0 0 var(--purple-);
+  transition: 0.1s ease-in-out 0.1s;
+  cursor: pointer;
+
+}
+
+
 h1,
 p {
   font: bold 1.25rem "Cambria", sans-serif;
   color: #2a2438;
+}
+
+#inputs{
+  display: grid;
+
 }
 
 input {
@@ -68,6 +79,8 @@ input:focus {
   /* Your custom styles for focused or active state */
   outline: none; /* Remove the default focus outline */
   border: 2px solid var(--purple-);
+  transition: 0.01s ease-in-out 0.01s;
+
 }
 
 p,

@@ -5,21 +5,20 @@
       <span class="fa fa-star checked"></span>
     </header>
     <form>
-      <label for="number1"></label>
-      <input
-        type="number"
-        placeholder="Type a number"
-        [(ngModel)]="n1"
-        name="number1 "
-      />
-      <label for="number2"></label>
-      <input
-        type="number"
-        placeholder="Type a number"
-        [(ngModel)]="n2"
-        name="number2"
-      />
-
+      <div id="inputs">
+        <input
+          type="number"
+          placeholder="Type a number"
+          [(ngModel)]="n1"
+          name="number1 "
+        />
+        <input
+          type="number"
+          placeholder="Type a number"
+          [(ngModel)]="n2"
+          name="number2"
+        />
+      </div>
       <div id="buttons">
         <button (click)="calculator(1)">Add</button>
         <button (click)="calculator(2)">Substract</button>

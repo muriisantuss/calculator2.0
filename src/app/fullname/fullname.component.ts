@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class FullnameComponent {
   n1: any;
   n2: any;
-  sum: any;
+  sum: number = 0;
 
-  calculator(operation: any) {
+  calculator(operation: number) {
     if (operation == 1) {
       return (this.sum = this.n1 + this.n2);
     } else if (operation == 2) {
