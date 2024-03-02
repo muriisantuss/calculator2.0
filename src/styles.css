@@ -47,3 +47,12 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+:root{
+  --purple-: #92B4F4;
+  --puple2-: #B8BEDD;
+  --gray-: #CFDEE7;
+  --off-white: #F0E6EF;
+  --black-:#F0E6EF;
+
+  
+}

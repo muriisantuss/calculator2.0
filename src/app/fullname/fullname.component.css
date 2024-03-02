@@ -1,3 +1,15 @@
+:root{
+  --purple-: #92B4F4;
+  --puple2-: #B8BEDD;
+  --gray-: #CFDEE7;
+  --off-white: #F0E6EF;
+  --black-:#F0E6EF;
+}
+
+main {
+  height: 100vh;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -6,24 +18,29 @@
   height: 100vh;
 }
 
+.checked {
+  color: #B8BEDD;
+}
+
 #buttons {
   display: grid;
   grid-template-columns: repeat(1, 1fr 1fr);
   gap: 1rem;
   margin: 1rem 0;
 }
-h1, p {
-  font: bold 1.25rem "Cambria", sans-serif	;
+
+h1,
+p {
+  font: bold 1.25rem "Cambria", sans-serif;
 }
 
-input{
+input {
   text-align: center;
   line-height: 2rem;
 }
 
-
-
-p, label {
+p,
+label {
   display: block;
   text-align: center;
 }
