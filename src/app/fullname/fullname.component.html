@@ -12,8 +12,8 @@
             validationError ? 'Please enter both numbers' : 'Type a number'
           "
           [(ngModel)]="n1"
-          name="number1 "
-        />
+          name="number1"
+          />
         <input
           type="number"
           placeholder="{{
@@ -21,7 +21,7 @@
           }}"
           [(ngModel)]="n2"
           name="number2"
-        />
+          />
       </div>
       <div id="buttons">
         <button (click)="inputReset(); calculator(1)">Add</button>
@@ -30,7 +30,7 @@
         <button (click)="inputReset(); calculator(4)">Divide</button>
       </div>
 
-      <p>Result: <br />{{ sum }}</p>
+      <p>Result: <br />{{ sum.toLocaleString("pt-BR") }}</p>
     </form>
   </section>
 </main>
