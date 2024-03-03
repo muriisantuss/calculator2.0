@@ -1,11 +1,3 @@
-:root {
-  --purple-: #2a2438;
-  --puple2-: #b8bedd;
-  --gray-: #cfdee7;
-  --off-white: #f0e6ef;
-  --black-: #060608;
-}
-
 main {
   max-width: 100%;
   height: 100vh;
@@ -89,4 +81,16 @@ p,
 label {
   display: block;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  /* Estilos específicos para telas maiores que 600 pixels */
+  #buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content {
+    transform: scale(0.9);
+    transform-origin: center center;
+    transition: 0.01s ease-in-out 0.01s;
+  }
 }
