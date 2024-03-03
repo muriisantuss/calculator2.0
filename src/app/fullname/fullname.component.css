@@ -24,11 +24,14 @@ main {
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: -0.4rem 0.4rem 0 0 #b8bedd7a;
+  transform: scale(1.4);
+  transform-origin: center center;
 }
 
 .checked {
   color: var(--purple-);
-  scale: 2.1;
+  transform: scale(1.5);
+  transform-origin: center center;
   margin-bottom: 0.6rem;
 }
 
