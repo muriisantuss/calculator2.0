@@ -8,22 +8,26 @@
       <div id="inputs">
         <input
           type="number"
-          placeholder="Type a number"
+          [placeholder]="
+            validationError ? 'Please enter both numbers' : 'Type a number'
+          "
           [(ngModel)]="n1"
           name="number1 "
         />
         <input
           type="number"
-          placeholder="Type a number"
+          placeholder="{{
+            validationError ? 'Please enter both numbers' : 'Type a number'
+          }}"
           [(ngModel)]="n2"
           name="number2"
         />
       </div>
       <div id="buttons">
-        <button (click)="calculator(1)">Add</button>
-        <button (click)="calculator(2)">Substract</button>
-        <button (click)="calculator(3)">Multiply</button>
-        <button (click)="calculator(4)">Divide</button>
+        <button (click)="inputReset(); calculator(1)">Add</button>
+        <button (click)="inputReset(); calculator(2)">Substract</button>
+        <button (click)="inputReset(); calculator(3)">Multiply</button>
+        <button (click)="inputReset(); calculator(4)">Divide</button>
       </div>
 
       <p>Result: <br />{{ sum }}</p>

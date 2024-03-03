@@ -7,6 +7,7 @@
 }
 
 main {
+  max-width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -27,8 +28,8 @@ main {
 
 .checked {
   color: var(--purple-);
-  scale: 2;
-  margin-bottom: 0.5rem;
+  scale: 2.1;
+  margin-bottom: 0.6rem;
 }
 
 #buttons {
@@ -42,16 +43,16 @@ button {
   background-color: var(--off-white);
   border-radius: 0.3rem;
   border: none;
-  box-shadow: -.1rem 0.16rem 0 0 var(--purple-);
+  box-shadow: -0.1rem 0.16rem 0 0 var(--purple-);
+  color: var(--purple-);
 }
 
-button:hover{
+button:hover {
   box-shadow: 0rem 0rem 0 0 var(--purple-);
   transition: 0.1s ease-in-out 0.1s;
   cursor: pointer;
-
+  color: var(--black-);
 }
-
 
 h1,
 p {
@@ -59,9 +60,8 @@ p {
   color: #2a2438;
 }
 
-#inputs{
+#inputs {
   display: grid;
-
 }
 
 input {
@@ -72,7 +72,7 @@ input {
   border-radius: 0.5rem;
   background-color: var(--off-white);
   box-shadow: -1px 2px 0 0 #2a243873;
-
+  color: var(--purple-);
 }
 
 input:focus {
@@ -80,7 +80,6 @@ input:focus {
   outline: none; /* Remove the default focus outline */
   border: 2px solid var(--purple-);
   transition: 0.01s ease-in-out 0.01s;
-
 }
 
 p,

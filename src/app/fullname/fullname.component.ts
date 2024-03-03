@@ -8,18 +8,40 @@ import { Component } from '@angular/core';
 export class FullnameComponent {
   n1: any;
   n2: any;
-  sum: number = 0;
+  sum: any = 0;
+  validationError: boolean = false;
 
-  calculator(operation: number) {
-    if (operation == 1) {
-      return (this.sum = this.n1 + this.n2);
-    } else if (operation == 2) {
-      return (this.sum = this.n1 - this.n2);
-    } else if (operation == 3) {
-      return (this.sum = this.n1 * this.n2);
-    } else if (operation == 4) {
-      return (this.sum = this.n1 / this.n2);
+  inputReset() {
+    if (!this.n1 || !this.n2) {
+      this.validationError = true;
+      this.sum = 0;
+      return;
     } else {
+      this.validationError = false;
+      return;
+    }
+  }
+
+  calculator(operation: number = 0) {
+    if (operation == 1) {
+      this.sum = this.n1 + this.n2;
+      this.n1 = null;
+      this.n2 = null;
+      return;
+    } else if (operation == 2) {
+      this.sum = this.n1 - this.n2;
+      this.n1 = null;
+      this.n2 = null;
+      return;
+    } else if (operation == 3) {
+      this.sum = this.n1 * this.n2;
+      this.n1 = null;
+      this.n2 = null;
+      return;
+    } else if (operation == 4) {
+      this.sum = this.n1 / this.n2;
+      this.n1 = null;
+      this.n2 = null;
       return;
     }
   }
