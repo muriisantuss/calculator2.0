@@ -59,9 +59,7 @@ Isso abrirá automaticamente o seu navegador padrão e carregará o currículo. 
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
-<br>
-
- Website **([HTLML5](https://html.com/) + [CSS3](https://w3.org/Style/CSS/Overview.en.html) + [TypeScript](https://www.typescriptlang.org/))**
+ > Website **([HTLML5](https://html.com/) + [CSS3](https://w3.org/Style/CSS/Overview.en.html) + [TypeScript](https://www.typescriptlang.org/))**
 
 - **[HTML5](https://html.com/)**
 - **[CSS3](https://w3.org/Style/CSS/Overview.en.html)**
