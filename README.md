@@ -2,7 +2,7 @@
   <div>
       <img style="width:100px; border-radius: 0.5rem;" src="./src/favicon.ico" alt="cvGift">
   </div>
-  <h1>Calculadora</h1>
+  <h1>Calculadora2.0</h1>
   <p>
   <strong>Desenvolvida em Angular com visual encantador</strong>
   <br>
