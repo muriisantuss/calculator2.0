@@ -38,7 +38,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ### 🎲 Como Usar
 
-Após a instalação das dependências, você pode iniciar o servidor de desenvolvimento do Angular para visualizar o currículo no navegador.
+Após a instalação das dependências, você pode iniciar o servidor de desenvolvimento do Angular para visualizar o website no navegador.
 
 1. Navegue até o diretório do projeto:
    ```bash
@@ -55,7 +55,7 @@ Após a instalação das dependências, você pode iniciar o servidor de desenvo
    ng serve -o
    ```
 
-Isso abrirá automaticamente o seu navegador padrão e carregará o currículo. Qualquer alteração que você fizer nos arquivos do projeto será automaticamente recarregada no navegador.
+Isso abrirá automaticamente o seu navegador padrão e carregará o  website. Qualquer alteração que você fizer nos arquivos do projeto será automaticamente recarregada no navegador.
 
 ### 🛠 Tecnologias
 
@@ -68,7 +68,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[Angular CLI 17.2.1](https://angular.io/)**
 - **[Node.js 20.9.0](https://nodejs.org/en)**
 
-### ✒️ Autor
+### 📖 Autor
 
 <div style="overflow: hidden;">
   <a  href="https://github.com/muriisantuss">
